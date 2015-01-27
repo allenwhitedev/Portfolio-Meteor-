@@ -1,0 +1,22 @@
+body {padding-top: 80px; margin: 0; background: #eeecef;}
+
+.navbar 
+{
+	font-family: 'Raleway';
+	background: rgba(255,255,255,.75);
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-text {text-align: center; font-size: 2rem;	}
+.large-pics 
+{
+	text-align: center;
+	width: 100%;
+
+}
+.large-pics img { width: 80%; margin-bottom: 20px;}
+
+
