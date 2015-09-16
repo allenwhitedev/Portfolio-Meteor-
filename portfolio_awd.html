@@ -1,6 +1,8 @@
 <head>
   <title>AWD</title>
   <link href='//fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 
@@ -32,10 +34,38 @@
   
   <br>
 
+  {{> about}}
+
   {{> lvd}}
 </body>
 
 <template name="lvd">
+<div class="small-pics greyBox">
+  <h2>The Gif Game</h2>
+  <h4 class="a">Search for gif game on the Google Play Store</h4>
+  <br>
+    <img src="gameLobby.png">
+    <br>
+    <img src="gameTypeModal.png">
+    <br>
+    <img src="home.png">
+    <br>
+    <img src="roundWinner.png">
+    <br>
+</div>
+
+<div class="greyBox">
+  <hr>
+  <br>
+  <h2>LakeView Dental</h2>
+  <h4 class="a">
+    On your computer: <a href='http://lakeviewdental.org'>lakeviewdental.org</a> 
+    <br>
+    <br>
+        On your phone: <a href='https://lakeviewdental.herokuapp.com'>lakeviewdental.herokuapp.com</a> 
+    <br>
+    </h4>
+</div>
 
 <div class="large-pics">
 
@@ -46,24 +76,57 @@
   <img src="pf_lvd3.png">
   <br>
 
-  <img src="pf_pl1.png">
+
+<div class="greyBox">
+  <hr>
   <br>
-  <img src="pf_pl2.png">
-  <br>
-  <img src="pf_pl3.png">
-  <br>
+    <h2>Pipeline (the check in app)</h2>
+    <h4 class="a">
+    On your phone: <a href='http://pipeline-working.herokuapp.com'>http://pipeline-working.herokuapp.com</a> 
+    <br>
+    <br>
+    On your computer: <a href='https://thepipeline.herokuapp.com'>https://thepipeline.herokuapp.com</a>
+    </h4>
 </div>
 
-<div clas="small-pics"></div>
+    <img src="pf_pl1.png">
+    <br>
+    <img src="pf_pl2.png">
+    <br>
+    <img src="pf_pl3.png">
+    <br>
+  </div>
+
+
+<div class="small-pics greyBox">
   <img src="pf_mpl1.png">
   <br>
   <img src="pf_mpl2.png">
   <br>
   <img src="pf_mpl3.png">
   <br>
+  </div>
+
+</template>
+
+<template name='about'>
+<div class="greyBox">
+<h3>I am a full stack developer that makes websites and mobile apps for iOS and Android</h3>
+
+<h3>
+  <i class="fa fa-envelope"></i> 
+  <a>allenwhitedev@gmail.com</a>
+</h3>
+
+<h3>
+  <i class="fa fa-github"></i> 
+  <a href="https://github.com/allenwhitedev">allenwhitedev</a>
+</h3>
 
 
 
 
-
+<br>
+<hr>
+</div>
 </template>
