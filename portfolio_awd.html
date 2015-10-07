@@ -32,12 +32,17 @@
 </template>
 
 <template name="lvd">
+  <div class="websiteContainer">
+    <i class="fa fa-angle-left navArrow navArrowActive" id='prevLVD'></i>
 
     <div class='browserWrapper animated'>
-    <nav class='browserTopper'>
-        <li class='closeButton' id="closeOne"></li> &nbsp;
-    </nav>
-    <img class='fitContainer' src="pf_lvd3.png">
+      <nav class='browserTopper'>
+          <li class='closeButton' id="closeOne"></li> &nbsp;
+      </nav>
+      <img class='fitContainer animated lvdImg' src="{{currPic}}" id='{{currPic}}'>
+    </div>
+
+    <i class="fa fa-angle-right navArrow navArrowActive" id='nextLVD'></i>
   </div>
 </template>
 

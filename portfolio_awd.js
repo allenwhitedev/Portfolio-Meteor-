@@ -1,3 +1,5 @@
+var lvdPics = ['pf_lvd1.png', 'pf_lvd2.png', 'pf_lvd3.png'] 
+
 if (Meteor.isClient) 
 {
   Template.body.events
@@ -12,11 +14,43 @@ if (Meteor.isClient)
 	,
 	'click #prevLVD': function()
 	{
-		console.loge('prev lvd')
+		if (Session.get('currPic') == 'pf_lvd3.png')
+		{
+			$('#nextLVD').addClass('navArrowActive')
+			Session.set('currPic', 'pf_lvd2.png')
+		}
+		else if (Session.get('currPic') == 'pf_lvd2.png')
+		{
+			$('#prevLVD').removeClass('navArrowActive')
+			Session.set('currPic', 'pf_lvd1.png')
+		}
+		else
+			console.log('No more pics in this direction')
 	},
 	'click #nextLVD': function()
 	{
-		console.log('next lvd')
+		if (Session.get('currPic') == 'pf_lvd1.png')
+		{
+			$('#prevLVD').addClass('navArrowActive')
+			Session.set('currPic', 'pf_lvd2.png')
+		}
+		else if (Session.get('currPic') == 'pf_lvd2.png')
+		{
+			Session.set('currPic', 'pf_lvd3.png')
+			$('#nextLVD').removeClass('navArrowActive')
+		}
+		else
+			console.log('No more pics in this direction')
+	}
+})
+
+// Template.lvd.onCreated({Session.set('currPic', 'pf_lvd2')})
+
+Template.lvd.helpers
+({
+	'currPic': function()
+	{
+		return Session.get('currPic')
 	}
 })
 
